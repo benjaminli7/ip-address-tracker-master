@@ -49,6 +49,8 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     padding: 17px 20px;
+    cursor: pointer;
+    outline: none;
     @include media-max("desktop") {
       flex: 1;
     }
@@ -71,12 +73,14 @@
     border: none;
     padding: 17px 20px 17px 23px;
     background-color: black;
-    color: white;
-    font-weight: 700;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: $veryDarkGray;
+    }
   }
 
   .error-msg {
