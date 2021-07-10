@@ -1,6 +1,7 @@
 var map = L.map("map", {
   center: [48.833, 2.333],
   zoom: 16,
+  zoomControl: false
 });
 
 L.tileLayer("http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", {
