@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body,
+button,
+input {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#map {
+  z-index: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  #map {
+    height: 68.5165421558vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #map {
+    height: 70.1173959445vh;
+  }
+}
+
+.hero {
+  background: url("../../../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    background-position: right 44% top;
+    height: 295px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    background-size: cover;
+    height: 280px;
+    padding: 30px 170px;
+  }
+}
+
+.hero__title {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 33px;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.hero__searchbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__searchbox {
+    margin-bottom: 20px;
+    width: 335px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__searchbox {
+    margin-bottom: 50px;
+  }
+}
+
+.hero__input {
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 17px 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__input {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hero__input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__input::-webkit-input-placeholder {
+    font-size: 1.2rem;
+  }
+}
+
+.hero__btn {
+  cursor: pointer;
+  border: none;
+  padding: 17px 20px 17px 23px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.block {
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1023px) {
+  .block {
+    padding: 20px 20px 28px 20px;
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 30px 30px;
+    min-width: 900px;
+    max-width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .block__item:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.block__title {
+  color: #969696;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1023px) {
+  .block__title {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block__title {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+}
+
+.block__result {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .block__result {
+    font-size: 1.5rem;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  hr {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  hr {
+    margin-right: 40px;
+    margin-left: 15px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

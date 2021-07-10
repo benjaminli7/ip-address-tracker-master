@@ -1,0 +1,81 @@
+.hero {
+  background: url("../../../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-max("desktop") {
+    // mobile
+    background-position: right 44% top;
+    height: 295px;
+    padding: 20px;
+    text-align: center;
+  }
+  @include media-min("desktop") {
+    //desktop
+    background-size: cover;
+    height: 280px;
+    padding: 30px 170px;
+  }
+
+  @at-root #{&}__title {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 33px;
+    @include media-max("desktop") {
+      font-size: 1.6rem;
+    }
+    @include media-min("desktop") {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+
+  @at-root #{&}__searchbox {
+    display: flex;
+    justify-content: center;
+    @include media-max("desktop") {
+      margin-bottom: 20px;
+      width: 335px;
+      margin: 20px auto;
+    }
+    @include media-min("desktop") {
+      margin-bottom: 50px;
+    }
+  }
+
+  @at-root #{&}__input {
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 17px 20px;
+    @include media-max("desktop") {
+      flex: 1;
+    }
+    @include media-min("desktop") {
+      width: 500px;
+    }
+  }
+
+  @at-root #{&}__input::-webkit-input-placeholder {
+    @include media-max("desktop") {
+      font-size: 14px;
+    }
+    @include media-min("desktop") {
+      font-size: 1.2rem;
+    }
+  }
+
+  @at-root #{&}__btn {
+    cursor: pointer;
+    border: none;
+    padding: 17px 20px 17px 23px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
