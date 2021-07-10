@@ -31,7 +31,6 @@ btn.onclick = () => {
       } else {
         document.getElementsByClassName("error-msg")[0].style.display = "none";
       }
-      console.log(data);
       let ip = data.ip;
       let isp = data.isp;
       let city = data.location.city;
