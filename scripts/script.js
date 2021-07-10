@@ -1,4 +1,4 @@
-var map = L.map("map");
+var map = L.map("map", { zoomControl: false });
 
 function displayMap(lat, lng) {
   map.setView([lat, lng], 13);
