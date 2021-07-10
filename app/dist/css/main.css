@@ -161,6 +161,12 @@ input {
   border-bottom-left-radius: 0px;
 }
 
+.hero .error-msg {
+  text-align: center;
+  color: red;
+  display: none;
+}
+
 .block {
   background-color: white;
   border-radius: 15px;

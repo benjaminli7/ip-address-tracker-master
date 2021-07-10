@@ -41,6 +41,7 @@
   <body>
     <div class="hero">
       <h1 class="hero__title">IP Address Tracker</h1>
+      <p class="error-msg">Incorrect IP address!</p>
       <div class="hero__searchbox">
         <input
           class="hero__input"
@@ -55,26 +56,26 @@
       <div class="block">
         <div class="block__item">
           <h3 class="block__title">IP address</h3>
-          <p class="block__result block__ip">192.212.174.101</p>
+          <p class="block__result block__ip"></p>
         </div>
         <hr class="line hide-for-mobile" />
         <div class="block__item">
           <h3 class="block__title">Location</h3>
-          <p class="block__result block__location">Brookyn, NY 10001</p>
+          <p class="block__result block__location"><span id="city"></span>, <span id="country"></span> <span id="postalCode"></span></p>
         </div>
         <hr class="line hide-for-mobile" />
         <div class="block__item">
           <h3 class="block__title">Timezone</h3>
-          <p class="block__result block__timezone">UTC -05:00</p>
+          <p class="block__result block__timezone">UTC <span id="timezone"></span></p>
         </div>
         <hr class="line hide-for-mobile" />
         <div class="block__item">
           <h3 class="block__title">ISP</h3>
-          <p class="block__result block__isp">SpaceX Starlink</p>
+          <p class="block__result block__isp"></p>
         </div>
       </div>
     </div>
     <div id="map"></div>
-    <div class="attribution">Coded by <a href="#">Benjamin Li</a>.</div>
+    <div class="attribution">Coded by <a href="https://github.com/benjaminli7">Benjamin Li</a></div>
   </body>
 </html>
